@@ -64,6 +64,7 @@ dialog td button{padding:3px 14px;font-size:13px;line-height:1.4;border-radius:6
 .btn-add{background:#1f9d55;border-color:#1f9d55;color:#fff}.btn-add:hover{filter:brightness(1.1)}
 .dn{width:96px;text-align:left}.dn .ddb{min-height:28px;padding:2px 8px;gap:6px;font-size:13px;border-width:1px}.dn .ddb .av{width:14px;height:14px}.dn .ddi{padding:7px 10px;font-size:13px}.dn .ddi .av{width:18px;height:18px}
 #codes td{padding:6px 12px}
+#codes input[data-f="c"]{text-align:center;font-weight:600}
 button[data-del]{border:0;background:transparent;font-size:16px;font-weight:900;padding:2px 8px;color:#d33}button[data-del]:hover{background:transparent;color:#a00}.dn .ddl{bottom:auto;top:calc(100% + 6px);right:auto;min-width:270px}
 select.sel{appearance:none;-webkit-appearance:none;width:100%;padding:9px 36px 9px 12px;border-radius:10px;font-size:14px;cursor:pointer;background:var(--sf) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23888' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 13px center}
 .sel:focus{outline:2px solid var(--ac);outline-offset:1px}.sel:disabled{opacity:.8;cursor:default}
@@ -341,6 +342,29 @@ document.addEventListener('click',e=>{
 });
 document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.dd.open').forEach(ddClose)});
 init();
+</script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.4.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCxUpOYiUj2P9gknfe6oYTNQUwE_INywxs",
+    authDomain: "roosters-187df.firebaseapp.com",
+    projectId: "roosters-187df",
+    storageBucket: "roosters-187df.firebasestorage.app",
+    messagingSenderId: "281601826091",
+    appId: "1:281601826091:web:c2c61e3c818bf717d7b96e",
+    measurementId: "G-D56Q19ZG4V"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
 </script>
 </body>
 </html>
